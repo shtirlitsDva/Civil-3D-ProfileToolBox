@@ -20,8 +20,18 @@ using System.Linq;
 
 namespace ProfileToolBox
 {
-    public class Profiles
+    public class Profiles : IExtensionApplication
     {
+        #region IExtensionApplication Members
+        public void Initialize()
+        { // throw new System.Exception("The method or operation is not implemented.");
+        }
+
+        public void Terminate()
+        { // throw new System.Exception("The method or operation is not implemented.");
+        }
+        #endregion      
+
         #region Global objects used throughout the application
         private DocumentCollection docCol = null;
         private CivilDocument doc = null;
@@ -80,7 +90,7 @@ namespace ProfileToolBox
                     Autodesk.AutoCAD.DatabaseServices.ObjectId profByLayout =
                         Profile.CreateByLayout("New Profile", profileView.AlignmentId, layerId, profileStyleId, profileLabelSetStylesId);
 
-                    Profile profile = tx.GetObject(profByLayout, OpenMode.ForRead) as Profile;
+                    Profile profile = tx.GetObject(profByLayout, OpenMode.ForWrite) as Profile;
 
                     BlockTableRecord blockTableRecord = tx.GetObject(database.CurrentSpaceId, OpenMode.ForWrite) as BlockTableRecord;
 

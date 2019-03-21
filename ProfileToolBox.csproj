@@ -55,7 +55,11 @@
     </Reference>
     <Reference Include="AeccDbMgd">
       <HintPath>..\..\..\Programs\IDSP19\AutoCAD 2019\C3D\AeccDbMgd.dll</HintPath>
+      <Private>False</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="demo.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
