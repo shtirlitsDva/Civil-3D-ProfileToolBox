@@ -2,7 +2,6 @@
 // Type: ProfileToolBox.Profiles
 // Assembly: ProfileToolBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 // MVID: 028DD63F-139F-4C4B-939A-7D47EA0DC56B
-// Assembly location: G:\Dropbox\Nyttige ting\AutoCAD\ProfileToolBox.dll
 
 using Autodesk.Aec.DatabaseServices;
 using Autodesk.AutoCAD.ApplicationServices;
