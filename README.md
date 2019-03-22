@@ -23,7 +23,7 @@ Profile profile = tx.GetObject(profByLayout, OpenMode.ForWrite) as Profile;
 ```
 
 Problem 2:
-There is a section in the code, which tries to get the mid point of a polyline arc, but it was doing it with 10 points choosing 6th point -- which isn't the mid point. I changed it to 11 points choosing 5th point -- remember, the index of points is zero-based -- this gives the correct midpoint.
+There is a section in the code, which tries to get the mid point of a polyline arc, but it was doing it with 10 points choosing 6th point -- which isn't the mid point. I changed it to 11 points choosing 6th point -- remember, the index of points is zero-based, so it is number 5 -- this gives the correct midpoint.
 Original:
 
 ```c#
