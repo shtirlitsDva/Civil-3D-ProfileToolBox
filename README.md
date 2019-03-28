@@ -40,4 +40,6 @@ The tool worked on first compile after that, see gif for proof. ;)
 
 To get it to work, download the compiled .dll [here](https://github.com/shtirlitsDva/ProfileToolBox/releases) or compile it your self in VisualStudio and use 'netload' in acad to load the tool. Then call command: 'mypfp' to start the profile creation process.
 
+Remember to ublock the .dll in right-click properties window before the netload! If you unblock the .dll after netload you have to restart C3D.
+
 Compiled and tested with Civil 3D 2019 version. For other version you will have to compile .dll yourself.
