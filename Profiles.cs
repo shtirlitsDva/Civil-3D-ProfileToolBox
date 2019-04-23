@@ -142,7 +142,7 @@ namespace ProfileToolBox
 
                                     Point2d samplePoint = ((Curve2d)arcSegment2dAt).GetSamplePoints(11)[5]; //<-- was (10)[6] here, is wrong?
                                     double num12 = samplePoint.X - x;
-                                    double num13 = samplePoint.Y - y / profileViewStyle.GraphStyle.VerticalExaggeration + profileView.ElevationMin;
+                                    double num13 = (samplePoint.Y - y) / profileViewStyle.GraphStyle.VerticalExaggeration + profileView.ElevationMin;
 
                                     Point2d point2d4 = new Point2d(num12, num13);
                                     point2d3 = new Point2d(num10, num11);
