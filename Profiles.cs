@@ -58,8 +58,8 @@ namespace ProfileToolBox
                     if (((PromptResult)entity1).Status != PromptStatus.OK) return;
                     Autodesk.AutoCAD.DatabaseServices.ObjectId plObjId = entity1.ObjectId;
                     PromptEntityOptions promptEntityOptions2 = new PromptEntityOptions("\n Select a ProfileView: ");
-                    promptEntityOptions1.SetRejectMessage("\n Not a ProfileView");
-                    promptEntityOptions1.AddAllowedClass(typeof(ProfileView), true);
+                    promptEntityOptions2.SetRejectMessage("\n Not a ProfileView");
+                    promptEntityOptions2.AddAllowedClass(typeof(ProfileView), true);
                     PromptEntityResult entity2 = editor.GetEntity(promptEntityOptions2);
                     if (((PromptResult)entity2).Status != PromptStatus.OK) return;
 
